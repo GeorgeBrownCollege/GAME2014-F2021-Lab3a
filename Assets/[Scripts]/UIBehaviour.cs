@@ -14,11 +14,13 @@ public class UIBehaviour : MonoBehaviour
         previousSceneIndex = SceneManager.GetActiveScene().buildIndex - 1;
     }
 
+    // NextButton Pressed event handler
     public void OnNextButtonPressed()
     {
         SceneManager.LoadScene(nextSceneIndex);
     }
 
+    // BackButton Pressed event handler
     public void OnBackButtonPressed()
     {
         SceneManager.LoadScene(previousSceneIndex);
